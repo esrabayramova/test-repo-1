@@ -6,7 +6,7 @@ name: Java CI with Gradle
 on:
      [push, pull_request]
 #   push:
-#     branches: [ feature/lab1 ]
+#     branches: [ develop ]
 #   pull_request:
 #     branches: [ feature/lab1 ]
 
@@ -17,7 +17,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 17
+    - name: Set up JDK 16
       uses: actions/setup-java@v2
       with:
         java-version: '17'
